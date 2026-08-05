@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Man-Chen (Mandy) Liao</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* 強制改為單欄上下排列 */
+        .single-column-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .cert-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 12px;
+            padding: 6px 14px;
+            background-color: #fffdf7;
+            border: 1px solid var(--secondary-color);
+            color: var(--secondary-color);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .cert-link:hover {
+            background-color: var(--secondary-color);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(229, 154, 24, 0.2);
+        }
+
+        .pub-img-card {
+            width: 100%;
+            max-width: 480px;
+            height: auto;
+            border-radius: 12px;
+            margin-top: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 2px solid #fff;
+            transition: transform 0.3s ease;
+        }
+        .pub-img-card:hover {
+            transform: scale(1.02);
+        }
+        .img-caption {
+            font-size: 0.82rem;
+            color: var(--text-light);
+            margin-top: 6px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" style="font-weight: 700; color: var(--secondary-color); font-size: 1.2rem; letter-spacing: 1px; text-decoration: none;">Man-Chen (Mandy) Liao</a>
+              <nav>
+                <a href="index.html">About</a>
+                <a href="research.html">Research</a>
+                <a href="projects.html">Selected Course Projects</a>
+                <a href="publications.html" class="active">Publications</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="honors.html">Honors</a>
+                <a href="activities-skills.html">Activities & Skills</a>
+            </nav>
+        </header>
+
+        <section class="page-content">
+            <h2 class="section-title">Publications & Presentations</h2>
+            <div class="single-column-grid">
+                
+                <!-- 1. 第一篇 -->
+                <div class="experience-card">
+                    <div class="date-badge">Published in Conference Proceedings | Jan. 2026</div>
+                    <h3>24th Annual Hawaii International Conference on Education (HICE)</h3>
+                    <p class="subtitle">Honolulu, Hawaii, USA | First Author</p>
+                    <ul class="custom-list">
+                        <li>
+                            <strong>Paper Title:</strong> <br>
+                            <strong>Man-Chen Liao</strong> and Hung-Chang Liao, <em>"Design and Experimental Study of a Vocal Effects Unit Based on Frequency Response and Amplifier Design: A Comparison Between Practical Implementation and LTspice Simulation."</em>
+                        </li>
+                        <li>
+                            <strong>Abstract:</strong>
+                            <p style="margin-top: 8px; color: #555; line-height: 1.6;">
+                                Designed and implemented a functional vocal effects unit to investigate the influence of frequency response and amplifier design on audio signals. Utilized an FFT oscilloscope to characterize human voice spectrums, establishing parameters for LTspice simulations of low-pass, band-pass, and high-pass filters along with amplifier stages. Built a physical hardware prototype using microphone input and speaker output to benchmark real-world signal behavior against SPICE simulation models, identifying design non-idealities to enhance engineering education and circuit verification methodologies.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <a href="Certificate-Mandy.pdf" target="_blank" class="cert-link">
+                        <i class="fas fa-file-pdf"></i> Certificate of Presentation
+                    </a>
+                </div>
+
+                <!-- 2. 第二篇（已加入 Conference.jpg 照片） -->
+                <div class="experience-card">
+                    <div class="date-badge">Oral Presentation (No Proceedings) | Jan. 2025</div>
+                    <h3>23rd Annual Hawaii International Conference on Education (HICE)</h3>
+                    <p class="subtitle">Honolulu, Hawaii, USA | First Author (Conference Presentation)</p>
+                    <ul class="custom-list">
+                        <li>
+                            <strong>Paper Title:</strong> <br>
+                            <strong>Man-Chen Liao</strong> and Hung-Chang Liao, <em>"Enhancing Student Mastery of Linear Algebra through Blended Learning."</em>
+                        </li>
+                        <li>
+                            <strong>Abstract:</strong>
+                            <p style="margin-top: 8px; color: #555; line-height: 1.6;">
+                                Investigated whether integrating blended learning strategies into traditional linear algebra courses can effectively mitigate student challenges associated with abstract concepts, multi-dimensional spaces, and proof-based reasoning. Utilizing literature analysis and qualitative semi-structured interviews, the study revealed that supplementary online lecture videos and adaptive materials enable self-paced learning, empowering students to overcome theoretical learning barriers and strengthening active, independent problem-solving capabilities in higher mathematics.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div style="text-align: center; margin-top: 15px;">
+                        <img src="Conference.jpg" alt="Oral Presentation at 23rd HICE" class="pub-img-card">
+                        <div class="img-caption">Oral presentation session at the 23rd Annual Hawaii International Conference on Education</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Man-Chen (Mandy) Liao. All rights reserved.</p>
+    </footer>
+</body>
+</html>

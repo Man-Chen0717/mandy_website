@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Man-Chen (Mandy) Liao</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* 雙欄圖片卡片樣式 */
+        .card-flex-container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .card-flex-text {
+            flex: 1;
+        }
+        .card-flex-media {
+            width: 140px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+        .research-img-portrait {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            border: 2px solid #fff;
+            transition: transform 0.3s ease;
+        }
+        .research-img-portrait:hover {
+            transform: scale(1.04);
+        }
+        .img-caption {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            margin-top: 5px;
+            line-height: 1.2;
+        }
+
+        /* 標題連結樣式 */
+        .card-title-link {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .card-title-link:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        /* 手機板自動裁切為單欄 */
+        @media (max-width: 600px) {
+            .card-flex-container {
+                flex-direction: column;
+            }
+            .card-flex-media {
+                width: 100%;
+            }
+            .research-img-portrait {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" style="font-weight: 700; color: var(--secondary-color); font-size: 1.2rem; letter-spacing: 1px; text-decoration: none;">Man-Chen (Mandy) Liao</a>
+             <nav>
+                <a href="index.html">About</a>
+                <a href="research.html" class="active">Research</a>
+                <a href="projects.html">Selected Course Projects</a>
+                <a href="publications.html">Publications</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="honors.html">Honors</a>
+                <a href="activities-skills.html">Activities & Skills</a>
+            </nav>
+        </header>
+
+        <section class="page-content">
+            <h2 class="section-title">Research Experience</h2>
+            <div class="grid-section">
+                <!-- 1. NSTC -->
+                <div class="experience-card">
+                    <div class="date-badge">July 2026 - Feb. 2027</div>
+                    <h3>National Science and Technology Council (NSTC)</h3>
+                    <p class="subtitle">Undergraduate Researcher | Advised by Prof. Yu-Te Liao</p>
+                    <ul class="custom-list">
+                        <li>Awarded the NSTC College Student Research Scholarship for the project titled "An Integrated Electrochemical and Optical Smart Sensing Platform for Farm Animal Detection" (grant: 115-2813-C-A49-182-E).</li>
+                        <li>Aimed to develop a dual-modal sensing platform for point-of-care animal disease detection, focusing on mitigating environmental interference and improving diagnostic reliability.</li>
+                    </ul>
+                </div>
+
+                <!-- 2. WIML -->
+                <div class="experience-card">
+                    <div class="date-badge">July 2025 - Present</div>
+                    <h3>
+                        <a href="https://wiml.web.nycu.edu.tw/" target="_blank" class="card-title-link">
+                            Wireless Integrated Microsystems Lab, NYCU <i class="fas fa-external-link-alt" style="font-size: 0.8rem; margin-left: 4px;"></i>
+                        </a>
+                    </h3>
+                    <p class="subtitle">Undergraduate Researcher | Advised by Prof. Yu-Te Liao</p>
+                    <ul class="custom-list">
+                        <li>Researched the design and optimization of a two-stage operational amplifier featuring a zero-nulling resistor (Rz) for frequency compensation, aiming for high phase margin and wide bandwidth.</li>
+                        <li>Researched a new ultra-low noise Transimpedance Amplifier (TIA) topology with a DC current removal block to prevent integrator saturation under large background DC currents.</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Chien Lab (橫向圖文併排) -->
+                <div class="experience-card">
+                    <div class="date-badge">July 2026 - Aug. 2026</div>
+                    <h3>
+                        <a href="https://chienlab-bioic.github.io/" target="_blank" class="card-title-link">
+                            Chien Lab, UC Berkeley <i class="fas fa-external-link-alt" style="font-size: 0.8rem; margin-left: 4px;"></i>
+                        </a>
+                    </h3>
+                    <p class="subtitle">Visiting Student Researcher | Advised by Prof. Jun-Chau Chien</p>
+                    
+                    <div class="card-flex-container">
+                        <div class="card-flex-text">
+                            <ul class="custom-list">
+                                <li>Underwent intensive training in advanced analog integrated circuits and data converters (ADC/DAC).</li>
+                                <li>Engaged in weekly journal club meetings discussing cutting-edge IC research.</li>
+                            </ul>
+                        </div>
+                        <div class="card-flex-media">
+                            <img src="UCB_photo.JPG" alt="Visiting Student Researchers at UC Berkeley" class="research-img-portrait">
+                            <div class="img-caption">With visiting student researchers at UC Berkeley</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Man-Chen (Mandy) Liao. All rights reserved.</p>
+    </footer>
+</body>
+</html>

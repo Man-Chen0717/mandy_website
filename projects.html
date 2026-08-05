@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Course Projects - Man-Chen (Mandy) Liao</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* 單欄上下垂直排列 */
+        .single-column-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .project-img-card {
+            width: 100%;
+            max-width: 580px;
+            height: auto;
+            border-radius: 12px;
+            margin-top: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 2px solid #fff;
+            transition: transform 0.3s ease;
+        }
+        .project-img-card:hover {
+            transform: scale(1.02);
+        }
+        .img-caption {
+            font-size: 0.82rem;
+            color: var(--text-light);
+            margin-top: 6px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" style="font-weight: 700; color: var(--secondary-color); font-size: 1.2rem; letter-spacing: 1px; text-decoration: none;">Man-Chen (Mandy) Liao</a>
+              <nav>
+                <a href="index.html">About</a>
+                <a href="research.html">Research</a>
+                <a href="projects.html" class="active">Selected Course Projects</a>
+                <a href="publications.html">Publications</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="honors.html">Honors</a>
+                <a href="activities-skills.html">Activities & Skills</a>
+            </nav>
+        </header>
+
+        <section class="page-content">
+            <h2 class="section-title">Selected Course Projects</h2>
+            <div class="single-column-grid">
+                
+                <!-- Project 1: LDO -->
+                <div class="experience-card">
+                    <div class="date-badge">Mar. 2026 - June 2026</div>
+                    <h3>CMOS Low-Dropout Regulator with Integrated Flash ADC</h3>
+                    <p class="subtitle">Semester Project, Analog Integrated Circuits Lab | NYCU</p>
+                    <ul class="custom-list">
+                        <li>Constructed a transistor-level power management and data conversion circuit comprising an LDO, a Bandgap Reference (BGR), and a Flash ADC.</li>
+                        <li>Built the error amplifier (two-stage OP) for output voltage regulation and the BGR for stable 1.2V reference voltage, supporting digital output logic and a 100 mA load current.</li>
+                        <li>Conducted rigorous pre- and post-layout simulations to verify loop stability, transient performance, and line/load regulation. Completed DRC, LVS and PEX using TSMC 180nm PDK.</li>
+                    </ul>
+
+                    <div style="text-align: center; margin-top: 15px;">
+                        <img src="LDO.png" alt="System Block Diagram of CMOS LDO with Integrated Flash ADC" class="project-img-card">
+                        <div class="img-caption">System block diagram of the CMOS Low-Dropout Regulator integrated with BGR, Analog MUX, and Flash ADC</div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Two-Stage Op-Amp -->
+                <div class="experience-card">
+                    <div class="date-badge">Dec. 2025</div>
+                    <h3>Two-Stage Op-Amp Design with Cascode Input Stage</h3>
+                    <p class="subtitle">Final Project, Introduction to Analog Integrated Circuits | NYCU</p>
+                    <ul class="custom-list">
+                        <li>Simulated a two-stage Op-Amp project utilizing a cascode differential input stage to achieve an exceptional DC gain of 106.3 dB.</li>
+                        <li>Implemented Miller compensation to ensure frequency stability, maintaining a 60.5 MHz unity-gain frequency and a 56.3° phase margin.</li>
+                        <li>Achieved superior noise rejection with a CMRR of 120.1 dB and PSRR of 109.6 dB.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 3: High-Performance 6-Bit ALU -->
+                <div class="experience-card">
+                    <div class="date-badge">Oct. 2025 - Dec. 2025</div>
+                    <h3>High-Performance 6-Bit ALU</h3>
+                    <p class="subtitle">Semester Project, Introduction to VLSI Design | NYCU</p>
+                    <ul class="custom-list">
+                        <li>Designed a 6-bit ALU supporting arithmetic and logic operations, performing full-custom design flow with pre- and post-layout verification in HSPICE and Cadence Virtuoso.</li>
+                        <li>Achieved a 4.46 ns cycle time (1.6 ns period) and a compact layout area of 2,267.7 &mu;m<sup>2</sup>, verified through rigorous post-layout simulation.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Man-Chen (Mandy) Liao. All rights reserved.</p>
+    </footer>
+</body>
+</html>
