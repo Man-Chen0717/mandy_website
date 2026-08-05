@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities & Skills - Man-Chen (Mandy) Liao</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .activity-img-card {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-top: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 2px solid #fff;
+            transition: transform 0.3s ease;
+        }
+        .activity-img-card:hover {
+            transform: scale(1.02);
+        }
+        .activity-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .activity-gallery-grid img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border: 2px solid #fff;
+            transition: transform 0.3s ease;
+        }
+        .activity-gallery-grid img:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" style="font-weight: 700; color: var(--secondary-color); font-size: 1.2rem; letter-spacing: 1px; text-decoration: none;">Man-Chen (Mandy) Liao</a>
+             <nav>
+                <a href="index.html">About</a>
+                <a href="research.html">Research</a>
+                <a href="projects.html">Selected Course Projects</a>
+                <a href="publications.html">Publications</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="honors.html">Honors</a>
+                <a href="activities-skills.html" class="active">Activities & Skills</a>
+            </nav>
+        </header>
+
+        <section class="page-content">
+            <h2 class="section-title">Extracurricular Activities</h2>
+            <div class="grid-section">
+                
+                <!-- 乒乓球隊 -->
+                <div class="experience-card">
+                    <div class="date-badge">Sept. 2024 - Present</div>
+                    <h3>NYCU EE Department Table Tennis Team</h3>
+                    <p class="subtitle">National Yang Ming Chiao Tung University</p>
+                    <ul class="custom-list">
+                        <li>Contributed as an active team member and helped win the Annual Xiaomeichu Tournament, jointly organized by the EE departments of NYCU and NTHU, for two consecutive years.</li>
+                    </ul>
+                    <div class="activity-gallery-grid">
+                        <img src="小梅竹.JPG" alt="NYCU EE Table Tennis Team Xiaomeichu Tournament">
+                        <img src="小梅竹大二.JPEG" alt="NYCU EE Table Tennis Team">
+                    </div>
+                </div>
+
+                <!-- 吉他社 -->
+                <div class="experience-card">
+                    <div class="date-badge">Sept. 2023 - Present</div>
+                    <h3>NYCU Guitar Club</h3>
+                    <p class="subtitle">National Yang Ming Chiao Tung University</p>
+                    <ul class="custom-list">
+                        <li>Performed on stage as a vocalist, guitarist, and keyboardist in club music performances.</li>
+                    </ul>
+                    <div style="text-align: center;">
+                        <img src="吉他社.jpg" alt="NYCU Guitar Club Performance" class="activity-img-card">
+                    </div>
+                </div>
+
+                <!-- 熱音社 (已移至前) -->
+                <div class="experience-card">
+                    <div class="date-badge">Sept. 2021 - June 2022</div>
+                    <h3>President & Keyboardist in High School Hot Music Club</h3>
+                    <p class="subtitle">SHCH</p>
+                    <ul class="custom-list">
+                        <li>Led club operations, coordinated rehearsals and live performances, and managed overall event planning.</li>
+                    </ul>
+                    <div style="text-align: center;">
+                        <img src="hotmusic.jpg" alt="Hot Music Club Performance" class="activity-img-card">
+                    </div>
+                </div>
+
+                <!-- 半導體工作坊 -->
+                <div class="experience-card">
+                    <div class="date-badge">2026</div>
+                    <h3>Virtual U.S.-Taiwan-Japan Semiconductor Program</h3>
+                    <p class="subtitle">American Institute in Taiwan (AIT)</p>
+                    <ul class="custom-list">
+                        <li>Completed the program focusing on semiconductor policies, technological innovation, and talent development.</li>
+                    </ul>
+                </div>
+
+                <!-- 台大音樂獎獨唱比賽 (時間更新為 2026，放置於鋼琴發表會前) -->
+                <div class="experience-card">
+                    <div class="date-badge">2026</div>
+                    <h3>NTU Music Awards – Student Solo Singing Competition</h3>
+                    <p class="subtitle">National Taiwan University</p>
+                    <ul class="custom-list">
+                        <li>Selected as one of the top 100 participants in the Student Solo Singing Competition, advancing to the second round of a nationwide university-level vocal competition.</li>
+                    </ul>
+                </div>
+
+                <!-- 鋼琴獨奏發表會 -->
+                <div class="experience-card">
+                    <div class="date-badge">Dec. 2024</div>
+                    <h3>Music Credit Program – Piano Class Recital</h3>
+                    <p class="subtitle">National Yang Ming Chiao Tung University Library</p>
+                    <ul class="custom-list">
+                        <li>Performed a solo piano piece at the university library recital as part of the Music Credit Program, showcasing musical interpretation and performance skills before an audience of students and faculty.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- 專業技能區塊 -->
+            <h2 class="section-title" style="margin-top: 40px;">Technical Skills</h2>
+            <div class="grid-section">
+                <div class="experience-card" style="grid-column: 1 / -1;">
+                    <h3>💻 Skills & Software Tools</h3>
+                    <p class="subtitle">Proficient in EDA design tools, simulation software, lab instruments, and programming languages</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
+                        <span class="highlight">Virtuoso</span>
+                        <span class="highlight">Spectre</span>
+                        <span class="highlight">Calibre</span>
+                        <span class="highlight">Hspice</span>
+                        <span class="highlight">Verilog-A</span>
+                        <span class="highlight">LTspice</span>
+                        <span class="highlight">Oscilloscope</span>
+                        <span class="highlight">Function Generator</span>
+                        <span class="highlight">Python</span>
+                        <span class="highlight">C++</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Man-Chen (Mandy) Liao. All rights reserved.</p>
+    </footer>
+</body>
+</html>
