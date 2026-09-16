@@ -3,74 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Research - Man-Chen (Mandy) Liao</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <style>
-        /* 雙欄圖片卡片樣式 */
-        .card-flex-container {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            margin-top: 10px;
-        }
-        .card-flex-text {
-            flex: 1;
-        }
-        .card-flex-media {
-            width: 140px;
-            flex-shrink: 0;
-            text-align: center;
-        }
-        .research-img-portrait {
-            width: 100%;
-            height: 190px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-            border: 2px solid #fff;
-            transition: transform 0.3s ease;
-        }
-        .research-img-portrait:hover {
-            transform: scale(1.04);
-        }
-        .img-caption {
-            font-size: 0.75rem;
-            color: var(--text-light);
-            margin-top: 5px;
-            line-height: 1.2;
+
+        /* Single-column layout */
+        .single-column-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
         }
 
-        /* 標題連結樣式 */
+        /* Lab title links */
         .card-title-link {
             color: inherit;
             text-decoration: none;
             transition: color 0.3s ease;
         }
+
         .card-title-link:hover {
             color: var(--secondary-color);
             text-decoration: underline;
         }
 
-        /* 手機板自動裁切為單欄 */
-        @media (max-width: 600px) {
-            .card-flex-container {
-                flex-direction: column;
-            }
-            .card-flex-media {
-                width: 100%;
-            }
-            .research-img-portrait {
-                height: 250px;
-            }
+        /* Second-level bullets */
+        .sub-list {
+            margin-top: 8px;
+            margin-bottom: 4px;
+            padding-left: 24px;
         }
+
+        .sub-list li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .research-project-title {
+            font-weight: 600;
+        }
+
+        /* Berkeley photo */
+        .research-photo-container {
+            text-align: center;
+            margin-top: 18px;
+        }
+
+        .research-img {
+            width: 100%;
+            max-width: 220px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 2px solid #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .research-img:hover {
+            transform: scale(1.02);
+        }
+
+        .img-caption {
+            font-size: 0.78rem;
+            color: var(--text-light);
+            margin-top: 5px;
+            font-style: italic;
+            line-height: 1.3;
+        }
+
     </style>
+
 </head>
+
+
 <body>
+
     <div class="container">
+
         <header>
-            <a href="index.html" style="font-weight: 700; color: var(--secondary-color); font-size: 1.2rem; letter-spacing: 1px; text-decoration: none;">Man-Chen (Mandy) Liao</a>
-             <nav>
+
+            <a href="index.html"
+               style="
+                   font-weight: 700;
+                   color: var(--secondary-color);
+                   font-size: 1.2rem;
+                   letter-spacing: 1px;
+                   text-decoration: none;
+               ">
+                Man-Chen (Mandy) Liao
+            </a>
+
+            <nav>
                 <a href="index.html">About</a>
                 <a href="research.html" class="active">Research</a>
                 <a href="projects.html">Selected Course Projects</a>
@@ -79,66 +106,263 @@
                 <a href="honors.html">Honors</a>
                 <a href="activities-skills.html">Activities & Skills</a>
             </nav>
+
         </header>
 
+
         <section class="page-content">
-            <h2 class="section-title">Research Experience</h2>
-            <div class="grid-section">
+
+            <h2 class="section-title">
+                Research Experience
+            </h2>
+
+
+            <div class="single-column-grid">
+
+
                 <!-- 1. NSTC -->
-                <div class="experience-card">
-                    <div class="date-badge">July 2026 - Feb. 2027</div>
-                    <h3>National Science and Technology Council (NSTC)</h3>
-                    <p class="subtitle">Undergraduate Researcher | Advised by Prof. Yu-Te Liao</p>
-                    <ul class="custom-list">
-                        <li>Awarded the NSTC College Student Research Scholarship for the project titled "An Integrated Electrochemical and Optical Smart Sensing Platform for Farm Animal Detection" (grant: 115-2813-C-A49-182-E).</li>
-                        <li>Aimed to develop a dual-modal sensing platform for point-of-care animal disease detection, focusing on mitigating environmental interference and improving diagnostic reliability.</li>
-                    </ul>
-                </div>
 
-                <!-- 2. WIML -->
                 <div class="experience-card">
-                    <div class="date-badge">July 2025 - Present</div>
-                    <h3>
-                        <a href="https://wiml.web.nycu.edu.tw/" target="_blank" class="card-title-link">
-                            Wireless Integrated Microsystems Lab, NYCU <i class="fas fa-external-link-alt" style="font-size: 0.8rem; margin-left: 4px;"></i>
-                        </a>
-                    </h3>
-                    <p class="subtitle">Undergraduate Researcher | Advised by Prof. Yu-Te Liao</p>
-                    <ul class="custom-list">
-                        <li>Researched the design and optimization of a two-stage operational amplifier featuring a zero-nulling resistor (Rz) for frequency compensation, aiming for high phase margin and wide bandwidth.</li>
-                        <li>Researched a new ultra-low noise Transimpedance Amplifier (TIA) topology with a DC current removal block to prevent integrator saturation under large background DC currents.</li>
-                    </ul>
-                </div>
 
-                <!-- 3. Chien Lab (橫向圖文併排) -->
-                <div class="experience-card">
-                    <div class="date-badge">July 2026 - Aug. 2026</div>
-                    <h3>
-                        <a href="https://chienlab-bioic.github.io/" target="_blank" class="card-title-link">
-                            Chien Lab, UC Berkeley <i class="fas fa-external-link-alt" style="font-size: 0.8rem; margin-left: 4px;"></i>
-                        </a>
-                    </h3>
-                    <p class="subtitle">Visiting Student Researcher | Advised by Prof. Jun-Chau Chien</p>
-                    
-                    <div class="card-flex-container">
-                        <div class="card-flex-text">
-                            <ul class="custom-list">
-                                <li>Underwent intensive training in advanced analog integrated circuits and data converters (ADC/DAC).</li>
-                                <li>Engaged in weekly journal club meetings discussing cutting-edge IC research.</li>
-                            </ul>
-                        </div>
-                        <div class="card-flex-media">
-                            <img src="UCB_photo.JPG" alt="Visiting Student Researchers at UC Berkeley" class="research-img-portrait">
-                            <div class="img-caption">With visiting student researchers at UC Berkeley</div>
-                        </div>
+                    <div class="date-badge">
+                        July 2026 - Feb. 2027
                     </div>
+
+                    <h3>
+                        National Science and Technology Council (NSTC)
+                    </h3>
+
+                    <p class="subtitle">
+                        Undergraduate Researcher | Advised by Prof. Yu-Te Liao
+                    </p>
+
+                    <ul class="custom-list">
+
+                        <li>
+                            Awarded the NSTC College Student Research Scholarship for the project titled
+                            "An Integrated Electrochemical and Optical Smart Sensing Platform for Farm
+                            Animal Detection," grant: 115-2813-C-A49-182-E (NTD 6,000/month).
+                        </li>
+
+                        <li>
+                            Aimed to develop a dual-modal sensing platform for point-of-care animal disease
+                            detection. Focused on mitigating environmental interference and improving
+                            diagnostic reliability through data cross-validation.
+                        </li>
+
+                    </ul>
+
                 </div>
+
+
+                <!-- 2. Wireless Integrated Microsystems Lab -->
+
+                <div class="experience-card">
+
+                    <div class="date-badge">
+                        July 2025 - Present
+                    </div>
+
+                    <h3>
+
+                        <a href="https://wiml.web.nycu.edu.tw/"
+                           target="_blank"
+                           class="card-title-link">
+
+                            Wireless Integrated Microsystems Lab, NYCU
+
+                            <i class="fas fa-external-link-alt"
+                               style="font-size: 0.8rem; margin-left: 4px;">
+                            </i>
+
+                        </a>
+
+                    </h3>
+
+                    <p class="subtitle">
+                        Undergraduate Researcher | Advised by Prof. Yu-Te Liao
+                    </p>
+
+
+                    <ul class="custom-list">
+
+
+                        <!-- Two-Stage Op-Amp -->
+
+                        <li>
+
+                            <span class="research-project-title">
+                                Research Project: Two-Stage Operational Amplifier with Zero-Nulling Resistor
+                            </span>
+
+                            <ul class="sub-list">
+
+                                <li>
+                                    Designed and sized a CMOS operational amplifier based on power,
+                                    bandwidth, phase-margin, and output-swing requirements.
+                                </li>
+
+                                <li>
+                                    Investigated the trade-offs among compensation capacitance,
+                                    unity-gain bandwidth, phase margin, slew rate, and output swing,
+                                    and compared frequency compensation with and without a
+                                    zero-nulling resistor (Rz).
+                                </li>
+
+                                <li>
+                                    Achieved 70.17 dB DC gain, 955.56 kHz unity-gain bandwidth,
+                                    82.96° phase margin, and 81.07 dB CMRR through circuit-level
+                                    simulation.
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- TIA -->
+
+                        <li>
+
+                            <span class="research-project-title">
+                                Research Project: Low-Noise 170-dB&Omega; TIA for Very-Low-Current Sensing
+                            </span>
+
+                            <ul class="sub-list">
+
+                                <li>
+                                    Implemented a TIA architecture combining a capacitive-feedback integrator,
+                                    resistive-feedback differentiator, and DC current removal block for
+                                    very-low-current sensing.
+                                </li>
+
+                                <li>
+                                    Implemented a DC current removal feedback loop to prevent integrator
+                                    saturation while preserving the AC signal, and verified stable operation
+                                    with DC input currents from 0.3 nA to 10 nA.
+                                </li>
+
+                                <li>
+                                    Optimized the input-stage transconductance and transistor sizing to reduce
+                                    input-referred noise and power consumption, achieving 171 dB transimpedance
+                                    gain and 1 MHz bandwidth while reducing power from 25.75 mW to 9.87 mW.
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- 3. Chien Lab -->
+
+                <div class="experience-card">
+
+                    <div class="date-badge">
+                        July 2026 - Aug. 2026
+                    </div>
+
+                    <h3>
+
+                        <a href="https://chienlab-bioic.github.io/"
+                           target="_blank"
+                           class="card-title-link">
+
+                            Chien Lab, UC Berkeley
+
+                            <i class="fas fa-external-link-alt"
+                               style="font-size: 0.8rem; margin-left: 4px;">
+                            </i>
+
+                        </a>
+
+                    </h3>
+
+                    <p class="subtitle">
+                        Summer Research Intern | Advised by Prof. Jun-Chau Chien
+                    </p>
+
+                    <ul class="custom-list">
+
+                        <li>
+                            Underwent intensive training in advanced analog integrated circuits and data converters (ADC/DAC).
+                        </li>
+
+                        <li>
+                            Engaged in weekly journal club meetings discussing cutting-edge IC research.
+                        </li>
+
+                        <li>
+
+                            <span class="research-project-title">
+                                Research Project: Continuous-Time Zoom ADC with Smart Tracking
+                            </span>
+
+                            <ul class="sub-list">
+
+                                <li>
+                                    Implemented a system-level Verilog-A behavioral model of a continuous-time
+                                    Zoom ADC, integrating coarse estimation, residue tracking, &Delta;&Sigma;
+                                    feedback, and fine quantization to reproduce the complete ADC conversion process.
+                                </li>
+
+                                <li>
+                                    Implemented differential-mode (DM) and common-mode (CM) smart-tracking
+                                    algorithms, including adaptive CDAC updates based on residue polarity and
+                                    digital feedback.
+                                </li>
+
+                                <li>
+                                    Resolved system-level issues involving integrator polarity, timing dependencies,
+                                    and fine-quantizer saturation, and verified the integrated ADC through transient
+                                    and single-tone FFT simulations.
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+
+                    <!-- Berkeley Photo -->
+
+                    <div class="research-photo-container">
+
+                        <img
+                            src="UCB_photo.JPG"
+                            alt="Visiting Student Researchers at UC Berkeley"
+                            class="research-img"
+                        >
+
+                        <div class="img-caption">
+                            With visiting student researchers at UC Berkeley
+                        </div>
+
+                    </div>
+
+                </div>
+
+
             </div>
+
         </section>
+
     </div>
 
+
     <footer>
-        <p>&copy; 2026 Man-Chen (Mandy) Liao. All rights reserved.</p>
+
+        <p>
+            &copy; 2026 Man-Chen (Mandy) Liao. All rights reserved.
+        </p>
+
     </footer>
+
+
 </body>
+
 </html>
